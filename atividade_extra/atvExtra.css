@@ -1,0 +1,64 @@
+.mudacor{
+    width: 600px;
+    height: 600px;
+}
+
+@media screen and (max-width: 1920px) {
+    .mudacor{
+        background-color: yellow;
+    }
+
+    .mudacor h1:after{
+        content: "Cor amarela";
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .mudacor{
+        background-color: red;
+    }
+
+    .mudacor h1:after{
+        content: "Cor vermelha";
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .mudacor{
+        background-color: purple;
+    }
+
+    .mudacor h1:after{
+        content: "Cor roxa";
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mudacor{
+        background-color: magenta;
+    }
+
+    .mudacor h1:after{
+        content: "Cor magenta";
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mudacor{
+        background-color: orange;
+    }
+
+    .mudacor h1:after{
+        content: "Cor laranja";
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .mudacor{
+        background-color: gray;
+    }
+
+    .mudacor h1:after{
+        content: "Cor cinza";
+    }
+}
