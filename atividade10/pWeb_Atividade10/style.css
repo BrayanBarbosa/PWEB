@@ -1,0 +1,64 @@
+*{
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+body{
+    text-align: center;
+    background-image: linear-gradient(45deg,black,crimson);
+    height: 100vh;
+}
+
+p, input{
+    color: white;
+}
+
+#titulo{
+    font-size: 40px;
+    color:black;
+}
+
+#titulo, #corpo, form{
+    text-align: center;
+}
+
+input[type=text]{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(194, 4, 20);
+    color: #e71313;
+    width: 250px;
+    height: 20px;
+    padding-left: 10px;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 1px solid #d18c8c;
+    color: rgb(165, 7, 20);
+}
+
+button{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(165, 7, 20);
+    background: rgb(245, 61, 76);
+    color: #000000;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    width: 80px;
+    height: 20px;
+    align-items: center;
+}
+
+button:hover {
+    background: rgb(247, 135, 135);
+    color:white;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+button, select{
+    cursor: pointer;
+}
