@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content="Teyser" />
+    
+    <title> Atividade14 </title>
+</head>
+<body>
+    <form name="formulario">
+        <legend> Formulário Principal </legend>
+        <br>
+        <label for="fname"> Nome: </label><br><br>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="email"> E-mail: </label><br><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="comment">Comentário:</label><br><br>
+        <input type="text" name="comment" id="comment" placeholder="Insira seu comentário aqui">
+
+        <h3> PESQUISA </h3>
+        <label for="checkbox">Primeira vez nessa página?</label><br><br>
+        <input type="radio" id="rdb1" name="rdb1" onclick="desmarcar2()">Sim
+        <input type="radio" id="rdb2" name="rdb2" onclick="desmarcar1()">Não
+        <br><br>
+        <input type="submit" value="Enviar" onclick="validar()">
+        <input type="submit" value="Limpar" onclick="limpar()">
+
+    </form>
+
+    <script>
+        document.getElementById('rdb1').checked = true;
+
+        function limpar() {
+            document.formulario.elements[0].value = '';
+            document.formulario.elements[1].value = '';
+            document.getElementById('comment').value = 'Insira seu comentário aqui';
+            document.getElementById('rdb1').checked = true;
+        }
+
+
+
+        function desmarcar1() {
+            document.getElementById('rdb1').checked = false;
+        }
+
+        function desmarcar2() {
+            document.getElementById('rdb2').checked = false;
+        }
+
+
+        function validar() {
+            var name = document.formulario.elements[0].value;
+            var email = document.formulario.elements[1].value;
+            var comentario = document.getElementById('comment').value;
+
+            if (name.length < 10) {
+                alert("Nome inválido");
+                return;
+            }
+            if (!email.includes("@", 0) && !email.includes('.', 0)) {
+                alert('E-mail inválido');
+                return;
+            }
+            if (comentario.length < 20) {
+                alert('Comentário inválido');
+                return;
+            }
+
+            if (document.getElementById('rdb1').checked == true) {
+                alert('Volte sempre à esta página!');
+            } else {
+                alert('Que bom que você voltou a visitar esta página!');
+            }
+        }
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

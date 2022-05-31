@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Teyser" />
+    <title> Atividade15 </title>
+</head>
+<body>
+    <h1> Faculdade de Tecnologia de Sorocaba </h1>
+
+    <h3> Selecione o curso que deseja visitar </h3>
+
+    <form>
+        </br>
+        <label for="cursos">Cursos:</label>
+        <select name="cursos" id="cursos">
+            <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+            <option value="EA">Eletrônica Automotiva</option>
+            <option value="SB">Sistemas Biomédicos</option>
+            <option value="POL">Polímeros</option>
+        </select>
+        </br>
+        </br>
+        <input type="submit" value="OK" onclick="recuperaSelecao()"> 
+        </br> </br>
+        
+    </form>
+
+
+
+    <script>
+
+        function recuperaSelecao() {
+            var selecao = document.getElementById('cursos').value;
+            
+            if (selecao == "ADS"){
+                alert("Você será redirecionado para página do curso escolhido")
+                window.open("http://www.fatecsorocaba.edu.br/curso_ads.asp"); 
+            }
+            if (selecao == "EA"){
+                alert("Você será redirecionado para página do curso escolhido")
+                window.open("http://www.fatecsorocaba.edu.br/curso_ea.asp");
+                
+            }  
+            if (selecao == "SB"){
+                alert("Você será redirecionado para página do curso escolhido")
+                window.open("http://www.fatecsorocaba.edu.br/curso_sb.asp");
+                
+            }
+            if (selecao == "POL"){
+                alert("Você será redirecionado para página do curso escolhido")
+                window.open("http://www.fatecsorocaba.edu.br/curso_pol.asp");
+                
+            }     
+        }
+
+    </script>
+
+</body>
+</html>
